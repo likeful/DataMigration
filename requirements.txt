@@ -1,0 +1,6 @@
+oss2>=2.4.0
+PyMySQL>=0.8.00
+logentries>=0.17
+pytz>=2018.4
+pyyaml>=3.12
+boto3>=1.7.21

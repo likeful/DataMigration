@@ -1,0 +1,53 @@
+---
+# 阿里云认证
+ali_auth:
+    access_key: !!str       ali_auth_access_key
+    access_secret: !!str    ali_auth_access_secret
+
+# 阿里云OSS
+oss:
+    access_key: !!str       oss_auth_access_key
+    access_secret: !!str    oss_auth_access_secret
+    end_point: !!str        oss_end_point
+    bucket_name: !!str      oss_bucket_name
+
+# aws s3
+s3:
+    access_key: !!str       s3_auth_access_key
+    access_secret: !!str    s3_auth_access_secret
+    bucket_name: !!str      s3_bucket_name
+
+# 用户信息数据库
+auth_db:
+    host: !!str        auth_db_host
+    username: !!str    auth_db_username
+    password: !!str    auth_db_password
+    basename: !!str    auth_db_basename
+    port: !!int        3306
+
+# 国内数据信息数据库
+cn_data_db:
+    host: !!str                   cn_host
+    basename: !!str               cn_basename
+    username: !!str               cn_username
+    password: !!str               cn_password
+    port: !!int                   3306
+    # 时区设置。比如中国的时间是UTC+8，就填 8*60=480
+    time_zone_offset_min: !!int   480
+
+# 国外数据信息数据库
+us_data_db:
+    host: !!str                   us_host
+    basename: !!str               us_basename
+    username: !!str               us_username
+    password: !!str               us_password
+    port: !!int                   3306
+    # 时区设置
+    time_zone_offset_min: !!int   -360
+
+# 日志设置（其实没啥用）
+log:
+    std_out: !!bool         false
+    level: !!str            info
+    local_file: !!str       local.log
+    logentries_token: !!str token
